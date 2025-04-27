@@ -1,0 +1,16 @@
+{% load humanize %}
+<h2>Ringkasan Barang per Pemasok</h2>
+<table border="1">
+  <tr>
+    <th>Pemasok</th>
+    <th>Jumlah Barang</th>
+    <th>Total Nilai Barang</th>
+  </tr>
+  {% for s in summary %}
+  <tr>
+    <td>{{ s.supplier.name }}</td>
+    <td>{{ s.jumlah_barang }}</td>
+    <td>{{ s.total_nilai|floatformat:2|intcomma }}</td>
+  </tr>
+  {% endfor %}
+</table>

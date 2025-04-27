@@ -1,0 +1,7 @@
+{% load humanize %}
+<h2>Ringkasan Stok Barang</h2>
+<ul>
+  <li>Total Stok: {{ total_stock|intcomma }}</li>
+  <li>Total Nilai Stok: {{ total_value|floatformat:2|intcomma }}</li>
+  <li>Rata-rata Harga Barang: {{ average_price|floatformat:2|intcomma }}</li>
+</ul>

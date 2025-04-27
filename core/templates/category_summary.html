@@ -1,0 +1,18 @@
+{% load humanize %}
+<h2>Ringkasan Per Kategori</h2>
+<table border="1">
+  <tr>
+    <th>Kategori</th>
+    <th>Jumlah Barang</th>
+    <th>Total Nilai Stok</th>
+    <th>Rata-rata Harga</th>
+  </tr>
+  {% for s in summary %}
+  <tr>
+    <td>{{ s.category.name }}</td>
+    <td>{{ s.jumlah_barang }}</td>
+    <td>{{ s.total_nilai|floatformat:2|intcomma }}</td>
+    <td>{{ s.rata_rata|floatformat:2|intcomma }}</td>
+  </tr>
+  {% endfor %}
+</table>

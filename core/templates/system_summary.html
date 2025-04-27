@@ -1,0 +1,8 @@
+{% load humanize %}
+<h2>Ringkasan Sistem</h2>
+<ul>
+  <li>Total Jumlah Barang: {{ total_barang|intcomma }}</li>
+  <li>Total Nilai Stok: {{ total_nilai|floatformat:2|intcomma }}</li>
+  <li>Jumlah Kategori: {{ total_kategori|intcomma }}</li>
+  <li>Jumlah Pemasok: {{ total_supplier|intcomma }}</li>
+</ul>
