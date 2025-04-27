@@ -1,4 +1,5 @@
 UTS Pemrograman sisi server 
+
 Author
 - Nama : Bernandiko Priyambodo
 - NIM  : A11.2022.14673
@@ -55,23 +56,3 @@ Alur Pengerjaan Proyek
 - Membuat file `README.md` ini sebagai dokumentasi alur pengerjaan.
 - Push seluruh project ke repository GitHub.
 
-
-Struktur Folder
-inventory/
-├── core/
-│ ├── migrations/
-│ ├── templates/
-│ ├── init.py
-│ ├── admin.py
-│ ├── apps.py
-│ ├── models.py
-│ ├── views.py
-│ └── ...
-├── inventory/
-│ ├── init.py
-│ ├── settings.py
-│ ├── urls.py
-│ └── ...
-├── requirements.txt
-├── Dockerfile
-├── docker-compose.yml
